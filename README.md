@@ -7,7 +7,7 @@ This
 
 ###  Finite Difference Operator
 
-
+I began with taking this cameraman image, and convolving it with finite difference operators D_x and D_y, which I simply made with an np.array of [1, -1] respectively reshaped to a 1 x 2 matrix and 2 x 1 matrix. 
 
 ### Further Improvements:
 After the naive implementation, I also implemented a crop function that takes in an image and a percentage, and returns the image after cropping that percentage of the image. I 
