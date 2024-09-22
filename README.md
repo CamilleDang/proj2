@@ -15,7 +15,7 @@ I then defined two finite difference operators D_x and D_y, which I simply made 
 
 | X Partial Derivative | Y Partial Derivative | 
 |:-------------------------:|:-------------------------:|
-|<img width="500" alt="x gradient" src="xgrad.jpg"> |  <img width="500" alt="y graident" src="ygrad.jpg"> |
+|<img width="300" alt="x gradient" src="xgrad.jpg"> |  <img width="300" alt="y graident" src="ygrad.jpg"> |
 
 I then computed the gradient magnitude image through np.sqrt(xgrad ** 2 + ygrad ** 2) and subsequently normalizing it.
 
@@ -26,4 +26,12 @@ To compute the edge image, I binarized the gradient magnitude image, using a thr
 <img height="300" alt="binarized edge" src="edge.jpg">
 
 ### Derivative of Gaussian (DoG) Filter:
-Hi
+
+In order to smooth out the previous image, I created a 2D Gaussian kernel using an outer product of two 1D Gaussian filters, using cv2.getGaussianKernel().
+
+We noted that the results with just the difference operator were rather noisy. Luckily, we have a smoothing operator handy: the Gaussian filter G. Create a blurred version of the original image by convolving with a gaussian and repeat the procedure in the previous part (one way to create a 2D gaussian filter is by using cv2.getGaussianKernel() to create a 1D gaussian and then taking an outer product with its transpose to get a 2D gaussian kernel).
+
+What differences do you see?
+Now we can do the same thing with a single convolution instead of two by creating a derivative of gaussian filters. Convolve the gaussian with D_x and D_y and display the resulting DoG filters as images.
+
+Verify that you get the same result as before.
