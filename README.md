@@ -13,7 +13,9 @@ We begin with this original image of a cameraman.
 
 I then defined two finite difference operators D_x and D_y, which I simply made with an np.array of [1, -1] respectively reshaped to a 1 x 2 matrix and 2 x 1 matrix, and convolved the original image with each of the operators to get the x and y partial derivatives of the cameraman image.
 
-
+| X Partial Derivative | Y Partial Derivative | 
+|:-------------------------:|:-------------------------:|
+|<img width="500" alt="x gradient" src="xgrad.jpg"> |  <img width="500" alt="y graident" src="ygrad.jpg"> |
 
 ### Further Improvements:
 After the naive implementation, I also implemented a crop function that takes in an image and a percentage, and returns the image after cropping that percentage of the image. I 
