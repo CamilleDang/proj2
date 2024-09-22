@@ -9,6 +9,8 @@ This
 
 I began with taking this cameraman image, and convolving it with finite difference operators D_x and D_y, which I simply made with an np.array of [1, -1] respectively reshaped to a 1 x 2 matrix and 2 x 1 matrix. 
 
+<img height="500" alt="cameraman og" src="cameraman.png">
+
 ### Further Improvements:
 After the naive implementation, I also implemented a crop function that takes in an image and a percentage, and returns the image after cropping that percentage of the image. I 
 I then applied this function to each of the R, G, and B images, cropping each image by around 15% to get rid of borders that made channel alignment less accurate.
