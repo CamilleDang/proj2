@@ -17,7 +17,7 @@ I then defined two finite difference operators D_x and D_y, which I simply made 
 |:-------------------------:|:-------------------------:|
 |<img width="300" alt="x gradient" src="xgrad.jpg"> |  <img width="300" alt="y graident" src="ygrad.jpg"> |
 
-I then computed the gradient magnitude image through np.sqrt(xgrad ** 2 + ygrad ** 2) and subsequently normalizing it.
+I then computed the gradient magnitude image through np.sqrt(xgrad² + ygrad²) and subsequently normalizing it.
 
 <img height="300" alt="combined gradient" src="gradient.jpg">
 
