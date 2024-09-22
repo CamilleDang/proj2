@@ -7,9 +7,13 @@ This
 
 ###  Finite Difference Operator
 
-I began with taking this cameraman image, and convolving it with finite difference operators D_x and D_y, which I simply made with an np.array of [1, -1] respectively reshaped to a 1 x 2 matrix and 2 x 1 matrix. 
+We begin with this original image of a cameraman.
 
-<img height="500" alt="cameraman og" src="cameraman.png">
+<img height="300" alt="cameraman og" src="cameraman.png">
+
+I then defined two finite difference operators D_x and D_y, which I simply made with an np.array of [1, -1] respectively reshaped to a 1 x 2 matrix and 2 x 1 matrix, and convolved the original image with each of the operators to get the x and y partial derivatives of the cameraman image.
+
+
 
 ### Further Improvements:
 After the naive implementation, I also implemented a crop function that takes in an image and a percentage, and returns the image after cropping that percentage of the image. I 
