@@ -1,11 +1,11 @@
-## Project 2: Fun with Filters and Frequencies! :) 
+# Project 2: Fun with Filters and Frequencies! :) 
 
 *Follow along with the code here: 
 
-### Overview
+# Overview
 This 
 
-###  Finite Difference Operator
+#  Finite Difference Operator
 
 We begin with this original image of a cameraman.
 
@@ -23,7 +23,7 @@ I then computed the gradient magnitude image through np.sqrt(xgrad² + ygrad²) 
 |:-------------------------:|:-------------------------:|
 |<img width="300" alt="x gradient" src="gradient.jpg">  |  <img width="300" alt="y graident" src="edge.jpg"> |
 
-### Derivative of Gaussian (DoG) Filter:
+# Derivative of Gaussian (DoG) Filter:
 
 ## Approach 1: Blurring the Image First
 
@@ -59,9 +59,9 @@ As an alternative approach, instead of first blurring the image with the 2D Gaus
 |:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred gradient approach 2" src="blurred_gauss.jpg">  |  <img width="300" alt="blurred edge approach 2" src="blur_edge2.jpg"> |
 
-### Image "Sharpening"!
+# Image "Sharpening"!
 
-# Taj Mahal 
+### Taj Mahal 
 
 We can further use the low-pass Gaussian filter to sharpen blurry images! Given an image, I separated it into the three separate color channels, and then blurred each channel by convolving it with a 2D Gaussian filter. To extract the "details" of the image, I then subtracted each blurred channel by the channel. 
 
@@ -69,7 +69,7 @@ We can further use the low-pass Gaussian filter to sharpen blurry images! Given 
 |:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred taj mahal" src="blurred_taj.jpg">  |  <img width="300" alt="taj mahal details" src="details.jpg"> |
 
-The sharpened image was thus the original channel + the details * alpha. I used alpha = 1.5 to get this sharpened version of the Taj Mahal image.
+The sharpened image was thus the original channel + the details * alpha. I used alpha = 1.5 to get this sharpened version of the Taj Mahal image. We can clearly see that in the sharpened version, the lines and etches on the Taj Mahal are a lot more defined and sharper, as well as the outline of the building and of the trees. In the original version, the lines are apparent but not as strong.
 
 | Original Taj Mahal | Sharpened Taj Mahal | 
 |:-------------------------:|:-------------------------:|
@@ -77,7 +77,21 @@ The sharpened image was thus the original channel + the details * alpha. I used 
 
 I tried this sharpening technique on several other images!
 
-### Hybrid Images
+### La Sagrada Familia 
+
+| Blurred Sagrada Familia | High Frequency Details of Sagrada Familia | 
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred taj mahal" src="sagrada.jpg">  |  <img width="300" alt="taj mahal details" src="details.jpg"> |
+
+| Original Sagrada Familia | Sharpened Sagrada Familia | 
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred taj mahal" src="taj.jpg">  |  <img width="300" alt="taj mahal details" src="taj_sharp.jpg"> |
+
+### Where's Waldo
+
+### Tree Scenery
+
+# Hybrid Images
 
 
 
