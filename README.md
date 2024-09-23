@@ -43,10 +43,14 @@ Using the same procedure, we compute the gradient magnitude of this blurred imag
 
 As an alternative approach, instead of first blurring the image with the 2D Gaussian filter and then convolving with the D_x and D_y finite difference operators, we can convolve the 2D Gaussian filter with the D_x and D_y finite difference operators to get the DoG_x and DoG_y, and convolve these with the original image. I then followed the same steps as the above approach to calculate and show the gradient magnitude image as well as the blurred binarized edge image (with the same threshold as the above approach - 0.2), which are identical to the results from the previous approach.
 
+| DoG_x (D_x of 2D Gaussian) | DoG_y ((D_y of 2D Gaussian) | 
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="gaussian x filter" src="blurredxg.jpg">  |  <img width="300" alt="gaussian y filter" src="blurredyg.jpg"> |
+
 | Blurred X Partial Derivative | Blurred Y Partial Derivative | 
 |:-------------------------:|:-------------------------:|
-|<img width="300" alt="blurred x gradient" src="blurredxg.jpg">  |  <img width="300" alt="blurred y gradient" src="blurredyg.jpg"> |
+|<img width="300" alt="blurred x gradient approach 2" src="blurredxg.jpg">  |  <img width="300" alt="blurred y gradient approach 2" src="blurredyg.jpg"> |
 
 | Combined Blurred Gradient Magnitude | Binarized Edge Image| 
 |:-------------------------:|:-------------------------:|
-|<img width="300" alt="blurred gradient" src="blurred_gradient.jpg">  |  <img width="300" alt="blurred edge" src="blur_edge.jpg"> |
+|<img width="300" alt="blurred gradient approach 2" src="blurred_gradient.jpg">  |  <img width="300" alt="blurred edge approach 2" src="blur_edge.jpg"> |
