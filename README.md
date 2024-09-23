@@ -87,25 +87,25 @@ I tried this sharpening technique on several other images!
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="original sagrada" src="sag.jpg">  |  <img width="500" alt="sagrada details" src="sag_sharp.jpg">  |
 
-### Where's Waldo
+### Scenery
 
-| Blurred Waldo | High Frequency Details of Waldo | 
+| Blurred Scenery | High Frequency Details of Scenery | 
 |:-------------------------:|:-------------------------:|
-|<img width="500" alt="blurred sagrada" src="waldo_blurred.jpg">  |  <img width="500" alt="sagrada details" src="waldo_details.jpg"> |
+|<img width="500" alt="blurred scenery" src="scenery_blurred.jpg">  |  <img width="500" alt="scenery details" src="scenery_details.jpg"> |
 
-| Original Waldo | Sharpened Waldo (Threshold = 1.5) | 
+| Original Scenery | Sharpened Scenery (Threshold = 1.5) | 
 |:-------------------------:|:-------------------------:|
-|<img width="500" alt="original waldo" src="waldo.jpg">  |  <img width="500" alt="sagrada details" src="waldo_sharp.jpg">  |
+|<img width="500" alt="original scenery" src="scenery.jpg">  |  <img width="500" alt="scenery sharpened" src="scenery_sharp.jpg">  |
 
-### Tree Scenery
+### Trees
 
 | Blurred Trees | High Frequency Details of Trees | 
 |:-------------------------:|:-------------------------:|
-|<img width="500" alt="blurred sagrada" src="trees_blurred.jpg">  |  <img width="500" alt="sagrada details" src="trees_details.jpg"> |
+|<img width="500" alt="blurred trees" src="trees_blurred.jpg">  |  <img width="500" alt="trees details" src="trees_details.jpg"> |
 
 | Original Trees | Sharpened Trees (Threshold = 1) | 
 |:-------------------------:|:-------------------------:|
-|<img width="500" alt="original waldo" src="trees.jpg">  |  <img width="500" alt="sagrada details" src="trees_sharp.jpg"> |
+|<img width="500" alt="original trees" src="trees.jpg">  |  <img width="500" alt="trees sharpened" src="trees_sharp.jpg"> |
 
 # Hybrid Images
 
