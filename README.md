@@ -25,6 +25,8 @@ I then computed the gradient magnitude image through np.sqrt(xgrad² + ygrad²) 
 
 ### Derivative of Gaussian (DoG) Filter:
 
+## Approach 1: Blurring the Image First
+
 Although convolving with our finite difference operators gets us the correct edge images, it picks up a lot of noise. Using Gaussian filters, we can smooth out these previous results!
 I first created a 2D Gaussian kernel using an outer product of two 1D Gaussian filters, using cv2.getGaussianKernel() with a kernel size of 10 and sigma of 2. Convolving the original image with this 2D Gaussian kernel produces a blurrier image, preserving the general shape and structure of the iamge, but just making the edges softer.
 <img height="300" alt="blurrier " src="blurred.jpg">
@@ -41,16 +43,24 @@ Using the same procedure, we compute the gradient magnitude of this blurred imag
 |:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred gradient" src="blurred_gradient.jpg">  |  <img width="300" alt="blurred edge" src="blur_edge.jpg"> |
 
+## Approach 2: DoGx and DoGy
+
 As an alternative approach, instead of first blurring the image with the 2D Gaussian filter and then convolving with the D_x and D_y finite difference operators, we can convolve the 2D Gaussian filter with the D_x and D_y finite difference operators to get the DoG_x and DoG_y, and convolve these with the original image. I then followed the same steps as the above approach to calculate and show the gradient magnitude image as well as the blurred binarized edge image (with the same threshold as the above approach - 0.2), which are identical to the results from the previous approach.
 
-| DoG_x (D_x of 2D Gaussian) | DoG_y ((D_y of 2D Gaussian) | 
+| DoG_x (D_x of 2D Gaussian) | DoG_y (D_y of 2D Gaussian) | 
 |:-------------------------:|:-------------------------:|
-|<img width="300" alt="gaussian x filter" src="blurredxg.jpg">  |  <img width="300" alt="gaussian y filter" src="blurredyg.jpg"> |
+|<img width="300" alt="gaussian x filter" src="dx_gauss.jpg">  |  <img width="300" alt="gaussian y filter" src="dy_gauss.jpg"> |
 
 | Blurred X Partial Derivative | Blurred Y Partial Derivative | 
 |:-------------------------:|:-------------------------:|
-|<img width="300" alt="blurred x gradient approach 2" src="blurredxg.jpg">  |  <img width="300" alt="blurred y gradient approach 2" src="blurredyg.jpg"> |
+|<img width="300" alt="blurred x gradient approach 2" src="dx_gaussim.jpg">  |  <img width="300" alt="blurred y gradient approach 2" src="dy_gaussim.jpg"> |
 
 | Combined Blurred Gradient Magnitude | Binarized Edge Image| 
 |:-------------------------:|:-------------------------:|
-|<img width="300" alt="blurred gradient approach 2" src="blurred_gradient.jpg">  |  <img width="300" alt="blurred edge approach 2" src="blur_edge.jpg"> |
+|<img width="300" alt="blurred gradient approach 2" src="blurred_gauss.jpg">  |  <img width="300" alt="blurred edge approach 2" src="blur_edge2.jpg"> |
+
+### Image "Sharpening"!
+
+We can further use the low-pass Gaussian filter to sharpen blurry images! Given an image, I separated it into the three separate color channels, and then blurred each channel by convolving it with a 2D Gaussian filter. To extract the "details" of the image, I then subtracted each blurred channel by the channel. The sharpened image was thus the original channel + the details * alpha. I used alpha = 1.5 on this following example with the Taj Mahal.
+
+
