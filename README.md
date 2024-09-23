@@ -61,6 +61,19 @@ As an alternative approach, instead of first blurring the image with the 2D Gaus
 
 ### Image "Sharpening"!
 
-We can further use the low-pass Gaussian filter to sharpen blurry images! Given an image, I separated it into the three separate color channels, and then blurred each channel by convolving it with a 2D Gaussian filter. To extract the "details" of the image, I then subtracted each blurred channel by the channel. The sharpened image was thus the original channel + the details * alpha. I used alpha = 1.5 on this following example with the Taj Mahal.
+# Taj Mahal 
+
+We can further use the low-pass Gaussian filter to sharpen blurry images! Given an image, I separated it into the three separate color channels, and then blurred each channel by convolving it with a 2D Gaussian filter. To extract the "details" of the image, I then subtracted each blurred channel by the channel. 
+
+| Blurred Taj Mahal | High Frequency Details of Taj Mahal | 
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred taj mahal" src="blurred_taj.jpg">  |  <img width="300" alt="taj mahal details" src="details.jpg"> |
+
+The sharpened image was thus the original channel + the details * alpha. I used alpha = 1.5 to get this sharpened version of the Taj Mahal image.
+
+| Original Taj Mahal | Sharpened Taj Mahal | 
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred taj mahal" src="blurred_taj.jpg">  |  <img width="300" alt="taj mahal details" src="details.jpg"> |
+
 
 
