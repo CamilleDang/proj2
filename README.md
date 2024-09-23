@@ -3,7 +3,7 @@
 *Follow along with the code here: 
 
 ### Overview
-This
+This 
 
 ###  Finite Difference Operator
 
@@ -17,19 +17,29 @@ I then defined two finite difference operators D_x and D_y, which I simply made 
 |:-------------------------:|:-------------------------:|
 |<img width="300" alt="x gradient" src="xgrad.jpg"> |  <img width="300" alt="y graident" src="ygrad.jpg"> |
 
-I then computed the gradient magnitude image through np.sqrt(xgrad² + ygrad²) and subsequently normalizing it.
+I then computed the gradient magnitude image through np.sqrt(xgrad² + ygrad²) and subsequently normalizing it. To compute the edge image, I binarized the gradient magnitude image, using a threshold of 0.25.
 
-<img height="300" alt="combined gradient" src="gradient.jpg">
-
-To compute the edge image, I binarized the gradient magnitude image, using a threshold of 0.25.
-
-<img height="300" alt="binarized edge" src="edge.jpg">
+| Combined Gradient Magnitude | Binarized Edge Image | 
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="x gradient" src="gradient.jpg">  |  <img width="300" alt="y graident" src="edge.jpg"> |
 
 ### Derivative of Gaussian (DoG) Filter:
 
-In order to smooth out the previous image, I created a 2D Gaussian kernel using an outer product of two 1D Gaussian filters, using cv2.getGaussianKernel().
+Although convolving with our finite difference operators gets us the correct edge images, it picks up a lot of noise. Using Gaussian filters, we can smooth out these previous results!
+I first created a 2D Gaussian kernel using an outer product of two 1D Gaussian filters, using cv2.getGaussianKernel() with a kernel size of 10 and sigma of 2. Convolving the original image with this 2D Gaussian kernel produces a blurrier image, preserving the general shape and structure of the iamge, but just making the edges softer.
+<img height="300" alt="blurrier " src="blurred.jpg">
 
-We noted that the results with just the difference operator were rather noisy. Luckily, we have a smoothing operator handy: the Gaussian filter G. Create a blurred version of the original image by convolving with a gaussian and repeat the procedure in the previous part (one way to create a 2D gaussian filter is by using cv2.getGaussianKernel() to create a 1D gaussian and then taking an outer product with its transpose to get a 2D gaussian kernel).
+I then repeated similar steps as the previous part with the blurred image, convolving the blurred image with the X and Y finite difference operators.
+
+| Blurred X Partial Derivative | Blurred Y Partial Derivative | 
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred x gradient" src="blurredxg.jpg">  |  <img width="300" alt="blurred y gradient" src="blurredyg.jpg"> |
+
+Using the same procedure, we compute the gradient magnitude of this blurred image and subsequently binarized the gradient magnitude image (with a threshold of 0.06) to get the blurred edge image. Compared to the non-blurred image, we can see that the binarized edge image has 
+
+| Combined Blurred Gradient Magnitude | Binarized Edge Image| 
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred gradient" src="blurred_gradient.jpg">  |  <img width="300" alt="blurred edge" src="blur_edge.jpg"> |
 
 What differences do you see?
 Now we can do the same thing with a single convolution instead of two by creating a derivative of gaussian filters. Convolve the gaussian with D_x and D_y and display the resulting DoG filters as images.
