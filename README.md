@@ -73,7 +73,7 @@ The sharpened image was thus the original channel + the details * alpha. I used 
 
 | Original Taj Mahal | Sharpened Taj Mahal | 
 |:-------------------------:|:-------------------------:|
-|<img width="300" alt="blurred taj mahal" src="taj.jpg">  |  <img width="300" alt="taj mahal details" src="taj_sharp.jpg"> |
+|<img width="300" alt="original taj mahal" src="taj.jpg">  |  <img width="300" alt="sharpened taj mahal" src="taj_sharp.jpg"> |
 
 I tried this sharpening technique on several other images!
 
@@ -81,15 +81,31 @@ I tried this sharpening technique on several other images!
 
 | Blurred Sagrada Familia | High Frequency Details of Sagrada Familia | 
 |:-------------------------:|:-------------------------:|
-|<img width="300" alt="blurred taj mahal" src="sagrada.jpg">  |  <img width="300" alt="taj mahal details" src="details.jpg"> |
+|<img width="300" alt="blurred sagrada" src="sag_blurred.jpg">  |  <img width="300" alt="sagrada details" src="sag_details.jpg"> |
 
 | Original Sagrada Familia | Sharpened Sagrada Familia | 
 |:-------------------------:|:-------------------------:|
-|<img width="300" alt="blurred taj mahal" src="taj.jpg">  |  <img width="300" alt="taj mahal details" src="taj_sharp.jpg"> |
+|<img width="300" alt="original sagrada" src="sag.jpg">  |  <img width="300" alt="sagrada details" src="sag_sharp.jpg"> Threshold = 0.75 |
 
 ### Where's Waldo
 
+| Blurred Waldo | High Frequency Details of Waldo | 
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred sagrada" src="waldo_blurred.jpg">  |  <img width="300" alt="sagrada details" src="waldo_details.jpg"> |
+
+| Original Waldo | Sharpened Waldo | 
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="original waldo" src="waldo.jpg">  |  <img width="300" alt="sagrada details" src="waldo_sharp.jpg"> Threshold = 1.5 |
+
 ### Tree Scenery
+
+| Blurred Trees | High Frequency Details of Trees | 
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred sagrada" src="trees_blurred.jpg">  |  <img width="300" alt="sagrada details" src="trees_details.jpg"> |
+
+| Original Trees | Sharpened Trees | 
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="original waldo" src="trees.jpg">  |  <img width="300" alt="sagrada details" src="trees_sharp.jpg"> Threshold = 1|
 
 # Hybrid Images
 
