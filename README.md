@@ -35,13 +35,10 @@ I then repeated similar steps as the previous part with the blurred image, convo
 |:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred x gradient" src="blurredxg.jpg">  |  <img width="300" alt="blurred y gradient" src="blurredyg.jpg"> |
 
-Using the same procedure, we compute the gradient magnitude of this blurred image and subsequently binarized the gradient magnitude image (with a threshold of 0.06) to get the blurred edge image. Compared to the non-blurred image, we can see that the binarized edge image has 
+Using the same procedure, we compute the gradient magnitude of this blurred image and subsequently binarized the gradient magnitude image (with a threshold of 0.25) to get the blurred edge image. Compared to the non-blurred image, we can see that both the blurred gradient magnitude image and blurred edge image have much thicker but smoother outlines around the edges. Both these resulting images have less noise compared to the results from the non-blurred images, especially at the bottom of the image, where the grainy noise from the original binarized edge image are completely absent in the blurred binarized edge image.
 
 | Combined Blurred Gradient Magnitude | Binarized Edge Image| 
 |:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred gradient" src="blurred_gradient.jpg">  |  <img width="300" alt="blurred edge" src="blur_edge.jpg"> |
 
-What differences do you see?
-Now we can do the same thing with a single convolution instead of two by creating a derivative of gaussian filters. Convolve the gaussian with D_x and D_y and display the resulting DoG filters as images.
-
-Verify that you get the same result as before.
+I then 
