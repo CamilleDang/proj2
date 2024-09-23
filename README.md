@@ -83,6 +83,8 @@ I tried this sharpening technique on several other images!
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="blurred sagrada" src="sag_blurred.jpg">  |  <img width="500" alt="sagrada details" src="sag_details.jpg"> |
 
+This was one of the more successful examples I tried. I sharpened an image of La Sagrada Familia, a famous cathedral in Barcelona (that I actually visited before!). Similarly to the Taj Mahal, it had a lot of intricate lines and detailed edges throughout the building structure, which are much more clearly brought out in the sharpened image. We can also see that details such as the construction cranes, leaves, and trees all stand out more because it is more strongly outlined in the sharpened version.
+
 | Original Sagrada Familia | Sharpened Sagrada Familia (Threshold = 0.75) | 
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="original sagrada" src="sag.jpg">  |  <img width="500" alt="sagrada details" src="sag_sharp.jpg">  |
@@ -93,7 +95,9 @@ I tried this sharpening technique on several other images!
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="blurred scenery" src="scenery_blurred.jpg">  |  <img width="500" alt="scenery details" src="scenery_details.jpg"> |
 
-| Original Scenery | Sharpened Scenery (Threshold = 1.5) | 
+This scenery also demonstrates a more subtle difference between the sharpened and regular version of this scenery, where the edges of the clouds and mountains are slightly defined. In this example, I think the sharpened image does especially well at outlining the trees at the bottom -- they are much more prominent in the sharpened image as opposed to the original image.
+
+| Original Scenery | Sharpened Scenery (Threshold = 1) | 
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="original scenery" src="scenery.jpg">  |  <img width="500" alt="scenery sharpened" src="scenery_sharp.jpg">  |
 
@@ -102,6 +106,8 @@ I tried this sharpening technique on several other images!
 | Blurred Trees | High Frequency Details of Trees | 
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="blurred trees" src="trees_blurred.jpg">  |  <img width="500" alt="trees details" src="trees_details.jpg"> |
+
+This image, in celebration of fall, was somewhat not as successful as the other examples. Because this image contained so many edges due to the whole image being leaves of small detail, the sharpening is not as apparent and can be overbearing, given that it is applying sharper edges to a large portion of the image. 
 
 | Original Trees | Sharpened Trees (Threshold = 1) | 
 |:-------------------------:|:-------------------------:|
