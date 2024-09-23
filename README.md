@@ -73,7 +73,7 @@ The sharpened image was thus the original channel + the details * alpha. I used 
 
 | Original Taj Mahal | Sharpened Taj Mahal | 
 |:-------------------------:|:-------------------------:|
-|<img width="300" alt="blurred taj mahal" src="blurred_taj.jpg">  |  <img width="300" alt="taj mahal details" src="details.jpg"> |
+|<img width="300" alt="blurred taj mahal" src="taj.jpg">  |  <img width="300" alt="taj mahal details" src="taj_sharp.jpg"> |
 
 
 
