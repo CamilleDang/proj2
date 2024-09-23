@@ -75,5 +75,9 @@ The sharpened image was thus the original channel + the details * alpha. I used 
 |:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred taj mahal" src="taj.jpg">  |  <img width="300" alt="taj mahal details" src="taj_sharp.jpg"> |
 
+I tried this sharpening technique on several other images!
+
+### Hybrid Images
+
 
 
