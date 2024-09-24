@@ -123,7 +123,7 @@ Once the images are aligned, we can first blur image1 by convolving it with a 2D
 As an exmaple, here is the hybridized version of Derek (blurred with kernel size: 22, sigma: 7) & his cat Nutmeg (blurred with kernel size: 49, sigma: 8). I first aligned Nutmeg to Derek using their eyes as the points of alignment. I then followed the steps from above, with Derek as image1 and Nutmeg as image2.
 
 | Original Derek | Original Nutmeg | Nutmeg Aligned to Derek |
-|:-------------------------:|:-------------------------:|
+|:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="og derek" src="DerekPicture.jpg">  |  <img width="300" alt="og nutmeg" src="nutmeg.jpg"> | <img width="300" alt="nutmeg aligned" src="nutmeg_aligned.jpg"> |
 
 | Blurred Derek | Nutmeg Details | Derek + Nutmeg! |
@@ -132,11 +132,11 @@ As an exmaple, here is the hybridized version of Derek (blurred with kernel size
 
 ### Example: Little Brother's Eyes
 
-I tried hybridizing two old selfies of my younger brother, one where his eyes are more squinted, and one where his eyes are wider. He shifted a bit between each selfie, so the alignment isn't perfect, but the squinted eyes are image1 (low-frequency) and the widened eyes are image2 (high-frequency). Up close, his eyes look wide open, but taking a few steps back, you'll see his squinting eyes!
+I tried hybridizing two old selfies of my younger brother, one where his eyes are more squinted, and one where his eyes are wider. He shifted a bit between each selfie, so the alignment isn't perfect, but the squinted eyes are image1 (low-frequency, kernel size: 22, sigma; 7) and the widened eyes are image2 (high-frequency, kernel size: 49, sigma: 8). Up close, his eyes look wide open, but taking a few steps back, you'll see his squinting eyes!
 
 | Squinting Connor | Wide Eyed Connor |
 |:-------------------------:|:-------------------------:|
-|<img width="300" alt="squinting" src="DerekPicture.jpg">  |  <img width="300" alt="wide eyed" src="nutmeg.jpg"> | 
+|<img width="300" alt="squinting" src="connor_low.jpg">  |  <img width="300" alt="wide eyed" src="nutmeg.jpg"> | 
 
 | Blurred Squinting | Wide Eyed Details | Squinting + Wide Eyed! |
 |:-------------------------:|:-------------------------:|:-------------------------:|
@@ -164,7 +164,7 @@ This is a hybrid of a plate of chicken nuggets and Vietnamese eggrolls! Both are
 
 | Blurred Nuggets | Eggroll Details | Nuggets & Eggrolls! |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="blurred squinting" src="connor_low.jpg">  | <img width="300" alt="wide eyed details" src="connor_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="connorcomb.jpg"> |
+|<img width="300" alt="blurred squinting" src="nuggets_low.jpg">  | <img width="300" alt="wide eyed details" src="eggrolls_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="nugs_hybrid.jpg"> |
 
 This was one of my favorites! We can also look at the frequency analysis of each image. 
 
