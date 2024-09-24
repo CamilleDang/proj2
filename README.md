@@ -142,18 +142,6 @@ I tried hybridizing two old selfies of my younger brother, one where his eyes ar
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred squinting" src="connor_low.jpg">  | <img width="300" alt="wide eyed details" src="connor_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="connorcomb.jp[g"> |
 
-### Example: Little Brother's Eyes
-
-I tried hybridizing two old selfies of my younger brother, one where his eyes are more squinted, and one where his eyes are wider. He shifted a bit between each selfie, so the alignment isn't perfect, but the squinted eyes are image1 (low-frequency) and the widened eyes are image2 (high-frequency). Up close, his eyes look wide open, but taking a few steps back, you'll see his squinting eyes!
-
-| Squinting Connor | Wide Eyed Connor |
-|:-------------------------:|:-------------------------:|
-|<img width="300" alt="squinting" src="DerekPicture.jpg">  |  <img width="300" alt="wide eyed" src="nutmeg.jpg"> | 
-
-| Blurred Squinting | Wide Eyed Details | Squinting + Wide Eyed! |
-|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="blurred squinting" src="connor_low.jpg">  | <img width="300" alt="wide eyed details" src="connor_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="connorcomb.jp[g"> |
-
 ### Example: Tim Cruise + Lion
 
 This is famous actor Tim Cruise (low-frequency) hybridized with a lion (high-frequency details). They make quite a good combination!
