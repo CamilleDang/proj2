@@ -122,13 +122,15 @@ Once the images are aligned, we can first blur image1 by convolving it with a 2D
 
 As an exmaple, here is the hybridized version of Derek (blurred with kernel size: 22, sigma: 7) & his cat Nutmeg (blurred with kernel size: 49, sigma: 8). I first aligned Nutmeg to Derek using their eyes as the points of alignment. I then followed the steps from above, with Derek as image1 and Nutmeg as image2.
 
-| Original Derek | Original Nutmeg |
+| Original Derek | Original Nutmeg | Nutmeg Aligned to Derek |
 |:-------------------------:|:-------------------------:|
-|<img width="300" alt="og derek" src="DerekPicture.jpg">  |  <img width="300" alt="og nutmeg" src="nutmeg.jpg"> |
+|<img width="300" alt="og derek" src="DerekPicture.jpg">  |  <img width="300" alt="og nutmeg" src="nutmeg.jpg"> | <img width="300" alt="nutmeg aligned" src="nutmeg_aligned.jpg"> |
 
-| Nutmeg Aligned to Derek | Blurred Derek | Nutmeg Details |
+| Blurred Derek | Nutmeg Details | Derek + Nutmeg! |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="nutmeg aligned" src="nutmeg_aligned.jpg">  |  <img width="300" alt="blurred derek" src="derek_low.jpg"> | <img width="300" alt="nutmeg details" src="nutmeg_high.jpg"> |
+|<img width="300" alt="blurred derek" src="derek_low.jpg">  | <img width="300" alt="nutmeg details" src="nutmeg_high.jpg">  | <img width="300" alt="combined" src="catman.jpg"> |
+
+
 
 
 
