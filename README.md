@@ -25,8 +25,9 @@ I then computed the gradient magnitude image by simply computing np.sqrt(xgrad²
 ## Approach 1: Blurring the Image First
 
 Although convolving with our finite difference operators gets us the correct edge images, it picks up a lot of noise. Using Gaussian filters, we can smooth out these previous results!
-I first created a 2D Gaussian kernel using an outer product of two 1D Gaussian filters, using cv2.getGaussianKernel() with a kernel size of 10 and sigma of 2. Convolving the original image with this 2D Gaussian kernel produces a blurrier image, preserving the general shape and structure of the iamge, but just making the edges softer.
-<img height="300" alt="blurrier " src="blurred.jpg">
+I first created a 2D Gaussian kernel using an outer product of two 1D Gaussian filters, using cv2.getGaussianKernel() with a kernel size of 10 and sigma of 2. Convolving the original image with this 2D Gaussian kernel produces a blurrier image, preserving the general shape and structure of the image, but just making the edges softer.
+
+<img height="300" alt="blurrier" src="blurred.jpg">
 
 I then repeated similar steps as the previous part with the blurred image, convolving the blurred image with the X and Y finite difference operators.
 
