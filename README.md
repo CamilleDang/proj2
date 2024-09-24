@@ -220,7 +220,10 @@ For every additional layer that we blend two images, we follow this logic: blend
 
 I used 7 layers of blending and a consistent blurring with kernel size 30 and sigma 7 for each layer. In order to improve blending, in addition to increasing the kernel size and sigma, I also found it really helpful to add an additional layer to the Gaussian stack of the mask, and using gauss_mask[i + 1] for each blended layer. This enabled me not to use the first unblended mask, which made complete blending a bit difficult. With all these adjustments, I was able to obtain a nicely blended oraple!
 
-<img height="300" alt="oraple" src="oraple_blend.jpg">
+Oraple
+| Original Orange | Original Apple | Mask | Oraple! | 
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="100" alt="l1" src="laplacian_orange0.jpg">  |  <img width="100" alt="l2" src="laplacian_orange1.jpg"> | <img width="100" alt="wl3" src="laplacian_orange2.jpg"> | <img height="300" alt="oraple" src="oraple_blend.jpg"> | 
 
 ### Recreating the Process of Blending the Oraple (Figure 3.42 in Szelski)
 
@@ -240,5 +243,11 @@ Combined Contribution to Oraple
 | Level 0 | Level 2 | Level 4 | Final |
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="200" alt="l0" src="blendedoraple0.jpg">  |  <img width="200" alt="l2" src="blendedoraple2.jpg"> | <img width="200" alt="l4" src="blendedoraple4.jpg"> | <img width="200" alt="l6" src="oraple_blend.jpg"> | 
+
+### More Blending: Pho + Bun Bo Hue
+
+Two of my favorite Vietnamese soup dishes are often really hard to choose between; if only I could eat them both at the same time! 
+
+
 
 
