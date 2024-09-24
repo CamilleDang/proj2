@@ -252,9 +252,9 @@ Kamala Harris in Coconut Tree
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="pho" src="kamla.jpg">  |  <img width="300" alt="bun bo hue" src="cocoo.jpg"> | <img width="300" alt="mask" src="kamalaoutline.jpg"> | 
 
-| Original Derek | Original Nutmeg | Nutmeg Aligned to Derek |
+| Mrs. Kamala Harris | Coconut Tree  | Mask |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="og derek" src="DerekPicture.jpg">  |  <img width="300" alt="og nutmeg" src="nutmeg.jpg"> | <img width="300" alt="nutmeg aligned" src="nutmeg_aligned.jpg"> |
+|<img width="300" alt="og derek" src="kamla.jpg">  |  <img width="300" alt="og nutmeg" src="cocoo.jpg"> | <img width="300" alt="nutmeg aligned" src="kamalaoutline.jpg"> |
 
 ### Kamala in Tree
 <img height="300" alt="oraple" src="blendcocos2.jpg"> 
