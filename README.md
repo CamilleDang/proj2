@@ -189,17 +189,17 @@ This was one of my favorites! We can also look at the frequency analysis of each
 
 We can use a Gaussian stack, in which we repeatedly apply a Gaussian filter to an image and add to the stack, as well as a Laplacian stack, which records the difference between an image in the Gaussian stack and the next (the blurred version). 
 
-Gaussian Stack of Apple
+#### Gaussian Stack of Apple
 
 <img width="180" alt="l1" src="gauss_apple0.jpg">   <img width="180" alt="l2" src="gauss_apple1.jpg">  <img width="180" alt="l3" src="gauss_apple2.jpg">  <img width="180" alt="l4" src="gauss_apple3.jpg">  <img width="180" alt="l5" src="gauss_apple4.jpg"> 
 
-Laplacian Stack of Apple
+#### Laplacian Stack of Apple
 <img width="180" alt="l1" src="laplacian_apple0.jpg">   <img width="180" alt="l2" src="laplacian_apple1.jpg">  <img width="180" alt="l3" src="laplacian_apple2.jpg">  <img width="180" alt="l4" src="laplacian_apple3.jpg">  <img width="180" alt="l5" src="laplacian_apple4.jpg"> 
 
-Gaussian Stack of Orange
+#### Gaussian Stack of Orange
 <img width="180" alt="l1" src="gauss_orange0.jpg">    <img width="180" alt="l2" src="gauss_orange1.jpg">  <img width="180" alt="l3" src="gauss_orange2.jpg">  <img width="180" alt="l4" src="gauss_orange3.jpg">  <img width="180" alt="l5" src="gauss_orange4.jpg">  
 
-Laplacian Stack of Orange
+#### Laplacian Stack of Orange
 <img width="180" alt="l1" src="laplacian_orange0.jpg">    <img width="180" alt="l2" src="laplacian_orange1.jpg">  <img width="180" alt="wl3" src="laplacian_orange2.jpg">  <img width="180" alt="l4" src="laplacian_orange3.jpg">  <img width="180" alt="l5" src="laplacian_orange4.jpg"> 
 
 # Multiresolution Blending
@@ -212,10 +212,9 @@ I used 7 layers of blending and a consistent blurring with kernel size 30 and si
 
 | Original Orange | Original Apple | Mask | 
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="l1" src="orange.jpeg">  |  <img width="300" alt="l2" src="apple.jpeg"> | <img width="300" alt="wl3" src="mask.jpg"> | 
+|<img width="300" alt="l1" src="orange.jpeg">  |  <img width="300" alt="l2" src="apple.jpeg"> | <img width="300" alt="wl3" src="mask.jpg"> |
 
-Oraple
-
+#### Oraple
 <img height="300" alt="oraple" src="oraple_blend.jpg"> 
 
 ### Recreating the Process of Blending the Oraple (Figure 3.42 in Szelski)
@@ -243,17 +242,18 @@ Pho + Bun Bo Hue
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="pho" src="pho.jpg">  |  <img width="300" alt="bun bo hue" src="hue.jpg"> | <img width="300" alt="mask" src="pho_mask.jpg"> | 
 
+| Pho | Bun Bo Hue  | Mask |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="300" alt="pho" src="pho.jpg">  |  <img width="300" alt="og nutmeg" src="hue.jpg"> | <img width="300" alt="mask" src="pho_mask.jpg"> |
+
 ### Pho + Bun Bo Hue 😁
-<img height="300" alt="oraple" src="blend_bunpho.jpg"> 
+<img height="300" alt="blend" src="blend_bunpho.jpg"> 
 
 ## Blending w/ Irregular Mask: Kamala in Coconut Tree!
 
 You think you just fell out of a coconut tree? 
 
 Kamala Harris in Coconut Tree
-| Mrs. Kamala Harris | Coconut Tree | Mask | 
-|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="pho" src="kamla.jpg">  |  <img width="300" alt="bun bo hue" src="cocoo.jpg"> | <img width="300" alt="mask" src="kamalaoutline.jpg"> | 
 
 | Mrs. Kamala Harris | Coconut Tree  | Mask |
 |:-------------------------:|:-------------------------:|:-------------------------:|
