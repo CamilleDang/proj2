@@ -193,23 +193,52 @@ This was one of my favorites! We can also look at the frequency analysis of each
 We can use a Gaussian stack, in which we repeatedly apply a Gaussian filter to an image and add to the stack, as well as a Laplacian stack, which records the difference between an image in the Gaussian stack and the next (the blurred version). 
 
 Gaussian Stack of Apple
-| Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
+| Level 0 | Level 1 | Level 2 | Level 3 | Level 4 |
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="200" alt="l1" src="gauss_apple0.jpg">  |  <img width="200" alt="l2" src="gauss_apple1.jpg"> | <img width="200" alt="l3" src="gauss_apple2.jpg"> | <img width="200" alt="l4" src="gauss_apple3.jpg"> | <img width="200" alt="l5" src="gauss_apple4.jpg"> | 
 
 Laplacian Stack of Apple
-| Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
+| Level 0 | Level 1 | Level 2 | Level 3 | Level 4 |
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="200" alt="l1" src="laplacian_apple0.jpg">  |  <img width="200" alt="l2" src="laplacian_apple1.jpg"> | <img width="200" alt="l3" src="laplacian_apple2.jpg"> | <img width="200" alt="l4" src="laplacian_apple3.jpg"> | <img width="200" alt="l5" src="laplacian_apple4.jpg"> | 
 
 Gaussian Stack of Orange
-| Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
+| Level 0 | Level 1 | Level 2 | Level 3 | Level 4 |
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="200" alt="l1" src="gauss_orange0.jpg">  |  <img width="200" alt="l2" src="gauss_orange1.jpg"> | <img width="200" alt="l3" src="gauss_orange2.jpg"> | <img width="200" alt="l4" src="gauss_orange3.jpg"> | <img width="200" alt="l5" src="gauss_orange4.jpg"> | 
 
 Laplacian Stack of Orange
-| Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
+| Level 0 | Level 1 | Level 2 | Level 3 | Level 4 |
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="200" alt="l1" src="laplacian_orange0.jpg">  |  <img width="200" alt="l2" src="laplacian_orange1.jpg"> | <img width="200" alt="wl3" src="laplacian_orange2.jpg"> | <img width="200" alt="l4" src="laplacian_orange3.jpg"> | <img width="200" alt="l5" src="laplacian_orange4.jpg"> | 
+
+# Multiresolution Blending
+
+We can use the above implementation of Laplacian stacks to create a smoothly blended version of two images with a particular mask corresponding to how we want to blend the two images. In this case, we can create a smoothly blended oraple with a vertically split mask. In addition to using the Laplacian stacks of the two images, we use the Gaussian stack of the mask so that for each additional layer of blending, we use a progressively blurrier mask, which improves blending.
+
+For every additional layer that we blend two images, we follow this logic: blended_layer = gauss_mask[i + 1] * laplacian_left[i] + (1 - gauss_mask[i + 1]) * laplacian_right[i].
+
+I used 7 layers of blending and a consistent blurring with kernel size 30 and sigma 7 for each layer. In order to improve blending, in addition to increasing the kernel size and sigma, I also found it really helpful to add an additional layer to the Gaussian stack of the mask, and using gauss_mask[i + 1] for each blended layer. This enabled me not to use the first unblended mask, which made complete blending a bit difficult. With all these adjustments, I was able to obtain a nicely blended oraple!
+
+<img height="300" alt="oraple" src="oraple_blend.jpg">
+
+### Recreating the Process of Blending the Oraple (Figure 3.42 in Szelski)
+
+Recreating the Figure (but flipped).
+
+Apple Contribution to Oraple
+| Level 0 | Level 2 | Level 4 | Level 6 |
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="200" alt="l0" src="laplacian_orange0.jpg">  |  <img width="200" alt="l2" src="laplacian_orange1.jpg"> | <img width="200" alt="l4" src="laplacian_orange2.jpg"> | <img width="200" alt="l6" src="laplacian_orange3.jpg"> | 
+
+Orange Contribution to Oraple 
+| Level 0 | Level 2 | Level 4 | Level 6 |
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="200" alt="l0" src="laplacian_orange0.jpg">  |  <img width="200" alt="l2" src="laplacian_orange1.jpg"> | <img width="200" alt="l4" src="laplacian_orange2.jpg"> | <img width="200" alt="l6" src="laplacian_orange3.jpg"> | 
+
+Combined Contribution to Oraple
+| Level 0 | Level 2 | Level 4 | Level 6 |
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="200" alt="l0" src="laplacian_orange0.jpg">  |  <img width="200" alt="l2" src="laplacian_orange1.jpg"> | <img width="200" alt="l4" src="laplacian_orange2.jpg"> | <img width="200" alt="l6" src="laplacian_orange3.jpg"> | 
 
 
