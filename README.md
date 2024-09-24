@@ -189,10 +189,15 @@ This was one of my favorites! We can also look at the frequency analysis of each
 
 We can use a Gaussian stack, in which we repeatedly apply a Gaussian filter to an image and add to the stack, as well as a Laplacian stack, which records the difference between an image in the Gaussian stack and the next (the blurred version). 
 
+
 Gaussian Stack of Apple
 | Level 0 | Level 1 | Level 2 | Level 3 | Level 4 |
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="200" alt="l1" src="gauss_apple0.jpg">  |  <img width="200" alt="l2" src="gauss_apple1.jpg"> | <img width="200" alt="l3" src="gauss_apple2.jpg"> | <img width="200" alt="l4" src="gauss_apple3.jpg"> | <img width="200" alt="l5" src="gauss_apple4.jpg"> | 
+
+| Low Frequency Nuggets | High Frequency Eggrolls | Nuggets & Eggrolls! |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred squinting" src="nuggets_low.jpg">  | <img width="300" alt="wide eyed details" src="eggrolls_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="nugs_hybrid.jpg"> |
 
 Laplacian Stack of Apple
 | Level 0 | Level 1 | Level 2 | Level 3 | Level 4 |
@@ -248,7 +253,7 @@ Two of my favorite Vietnamese soup dishes are often really hard to choose betwee
 Pho + Bun Bo Hue
 | Pho | Bun Bo Hue | Mask | Pho + Bun Bo Hue 😁 | 
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="pho" src="beef.jpg">  |  <img width="300" alt="bun bo hue" src="hue.jpg"> | <img width="300" alt="mask" src="mask.jpg"> | <img height="300" alt="oraple" src="blend_beefhue.jpg"> | 
+|<img width="300" alt="pho" src="pho.jpg">  |  <img width="300" alt="bun bo hue" src="hue.jpg"> | <img width="300" alt="mask" src="pho_mask.jpg"> | <img height="300" alt="oraple" src="blend_bunpho.jpg"> | 
 
 ## Blending w/ Irregular Mask: Kamala in Coconut Tree!
 
