@@ -1,9 +1,6 @@
 # Project 2: Fun with Filters and Frequencies! :) 
 
-*Follow along with the code here: 
-
-# Overview
-This 
+*Follow along with the code here: https://github.com/CamilleDang/proj2
 
 #  Finite Difference Operator
 
