@@ -223,7 +223,7 @@ I used 7 layers of blending and a consistent blurring with kernel size 30 and si
 Oraple
 | Original Orange | Original Apple | Mask | Oraple! | 
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="100" alt="l1" src="laplacian_orange0.jpg">  |  <img width="100" alt="l2" src="laplacian_orange1.jpg"> | <img width="100" alt="wl3" src="laplacian_orange2.jpg"> | <img height="300" alt="oraple" src="oraple_blend.jpg"> | 
+|<img width="300" alt="l1" src="laplacian_orange0.jpg">  |  <img width="300" alt="l2" src="laplacian_orange1.jpg"> | <img width="300" alt="wl3" src="laplacian_orange2.jpg"> | <img height="300" alt="oraple" src="oraple_blend.jpg"> | 
 
 ### Recreating the Process of Blending the Oraple (Figure 3.42 in Szelski)
 
@@ -244,10 +244,22 @@ Combined Contribution to Oraple
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="200" alt="l0" src="blendedoraple0.jpg">  |  <img width="200" alt="l2" src="blendedoraple2.jpg"> | <img width="200" alt="l4" src="blendedoraple4.jpg"> | <img width="200" alt="l6" src="oraple_blend.jpg"> | 
 
-### More Blending: Pho + Bun Bo Hue
+## More Blending: Pho + Bun Bo Hue
 
 Two of my favorite Vietnamese soup dishes are often really hard to choose between; if only I could eat them both at the same time! 
 
+Pho + Bun Bo Hue
+| Pho | Bun Bo Hue | Mask | Pho + Bun Bo Hue 😁 | 
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="300" alt="pho" src="beef.jpg">  |  <img width="300" alt="bun bo hue" src="hue.jpg"> | <img width="300" alt="mask" src="mask.jpg"> | <img height="300" alt="oraple" src="blend_beefhue.jpg"> | 
 
+## Blending w/ Irregular Mask: Kamala in Coconut Tree!
+
+You think you just fell out of a coconut tree? 
+
+Kamala Harris in Coconut Tree
+| Mrs. Kamala Harris | Coconut Tree | Mask | Kamala in Tree 😁 | 
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="300" alt="pho" src="kamla.jpg">  |  <img width="300" alt="bun bo hue" src="cocoo.jpg"> | <img width="300" alt="mask" src="kamalaoutline.jpg"> | <img height="300" alt="oraple" src="blendcocos2.jpg"> | 
 
 
