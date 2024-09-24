@@ -197,10 +197,10 @@ Laplacian Stack of Apple
 <img width="180" alt="l1" src="laplacian_apple0.jpg">   <img width="180" alt="l2" src="laplacian_apple1.jpg">  <img width="180" alt="l3" src="laplacian_apple2.jpg">  <img width="180" alt="l4" src="laplacian_apple3.jpg">  <img width="180" alt="l5" src="laplacian_apple4.jpg"> 
 
 Gaussian Stack of Orange
-<img width="180" alt="l1" src="gauss_orange0.jpg">    <img width="180" alt="l2" src="gauss_orange1.jpg"> | <img width="180" alt="l3" src="gauss_orange2.jpg">  <img width="180" alt="l4" src="gauss_orange3.jpg"> | <img width="180" alt="l5" src="gauss_orange4.jpg"> | 
+<img width="180" alt="l1" src="gauss_orange0.jpg">    <img width="180" alt="l2" src="gauss_orange1.jpg">  <img width="180" alt="l3" src="gauss_orange2.jpg">  <img width="180" alt="l4" src="gauss_orange3.jpg"> | <img width="180" alt="l5" src="gauss_orange4.jpg">  
 
 Laplacian Stack of Orange
-<img width="180" alt="l1" src="laplacian_orange0.jpg">    <img width="180" alt="l2" src="laplacian_orange1.jpg"> | <img width="180" alt="wl3" src="laplacian_orange2.jpg">  <img width="180" alt="l4" src="laplacian_orange3.jpg">  <img width="180" alt="l5" src="laplacian_orange4.jpg"> 
+<img width="180" alt="l1" src="laplacian_orange0.jpg">    <img width="180" alt="l2" src="laplacian_orange1.jpg">  <img width="180" alt="wl3" src="laplacian_orange2.jpg">  <img width="180" alt="l4" src="laplacian_orange3.jpg">  <img width="180" alt="l5" src="laplacian_orange4.jpg"> 
 
 # Multiresolution Blending
 
