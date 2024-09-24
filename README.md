@@ -223,7 +223,9 @@ I used 7 layers of blending and a consistent blurring with kernel size 30 and si
 Recreating the Figure.
 
 Left column: Level 0, Level 2, Level 4, Final Contributions of Apple to the Oraple 
+
 Middle column: Level 0, Level 2, Level 4, Final Contributions of Orange to the Oraple 
+
 Right column: Level 0, Level 2, Level 4, Final Level of Combined Contribution to the Oraple 
 
 <img width="200" alt="l0" src="left_oraple0.jpg">  <img width="200" alt="l0" src="right_oraple0.jpg">  <img width="200" alt="l0" src="blendedoraple0.jpg">
