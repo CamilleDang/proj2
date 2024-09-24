@@ -220,7 +220,19 @@ Oraple
 
 ### Recreating the Process of Blending the Oraple (Figure 3.42 in Szelski)
 
-Recreating the Figure (but flipped).
+Recreating the Figure.
+
+Left column: Level 0, Level 2, Level 4, Final Contributions of Apple to the Oraple 
+Middle column: Level 0, Level 2, Level 4, Final Contributions of Orange to the Oraple 
+Right column: Level 0, Level 2, Level 4, Final Level of Combined Contribution to the Oraple 
+
+<img width="300" alt="l0" src="left_oraple0.jpg">  <img width="300" alt="l0" src="right_oraple0.jpg">  <img width="300" alt="l0" src="blendedoraple0.jpg">
+
+<img width="300" alt="l2" src="left_oraple2.jpg">  <img width="300" alt="l2" src="right_oraple2.jpg">  <img width="300" alt="l2" src="blendedoraple2.jpg">
+
+<img width="300" alt="l4" src="left_oraple4.jpg">  <img width="300" alt="l4" src="right_oraple4.jpg">  <img width="300" alt="l4" src="blendedoraple4.jpg">
+
+<img width="300" alt="l6" src="final_apple.jpg">  <img width="300" alt="l6" src="final_orange.jpg">  <img width="300" alt="l6" src="oraple_blend.jpg">
 
 Apple Contribution to Oraple
 | Level 0 | Level 2 | Level 4 | Final |
@@ -242,9 +254,12 @@ Combined Contribution to Oraple
 Two of my favorite Vietnamese soup dishes are often really hard to choose between; if only I could eat them both at the same time! 
 
 Pho + Bun Bo Hue
-| Pho | Bun Bo Hue | Mask | Pho + Bun Bo Hue 😁 | 
-|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="pho" src="pho.jpg">  |  <img width="300" alt="bun bo hue" src="hue.jpg"> | <img width="300" alt="mask" src="pho_mask.jpg"> | <img height="300" alt="oraple" src="blend_bunpho.jpg"> | 
+| Pho | Bun Bo Hue | Mask | 
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="300" alt="pho" src="pho.jpg">  |  <img width="300" alt="bun bo hue" src="hue.jpg"> | <img width="300" alt="mask" src="pho_mask.jpg"> | 
+
+### Pho + Bun Bo Hue 😁
+<img height="300" alt="oraple" src="blend_bunpho.jpg"> 
 
 ## Blending w/ Irregular Mask: Kamala in Coconut Tree!
 
