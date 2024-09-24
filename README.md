@@ -227,18 +227,18 @@ I used 7 layers of blending and a consistent blurring with kernel size 30 and si
 Recreating the Figure (but flipped).
 
 Apple Contribution to Oraple
-| Level 0 | Level 2 | Level 4 | Level 6 |
+| Level 0 | Level 2 | Level 4 | Final |
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="200" alt="l0" src="left_oraple0.jpg">  |  <img width="200" alt="l2" src="left_oraple2.jpg"> | <img width="200" alt="l4" src="left_oraple4.jpg"> | <img width="200" alt="l6" src="left_oraple6.jpg"> | 
+|<img width="200" alt="l0" src="left_oraple0.jpg">  |  <img width="200" alt="l2" src="left_oraple2.jpg"> | <img width="200" alt="l4" src="left_oraple4.jpg"> | <img width="200" alt="l6" src="final_apple.jpg"> | 
 
 Orange Contribution to Oraple 
-| Level 0 | Level 2 | Level 4 | Level 6 |
+| Level 0 | Level 2 | Level 4 | Final |
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="200" alt="l0" src="right_oraple0.jpg">  |  <img width="200" alt="l2" src="right_oraple2.jpg"> | <img width="200" alt="l4" src="right_oraple4.jpg"> | <img width="200" alt="l6" src="right_oraple6.jpg"> | 
+|<img width="200" alt="l0" src="right_oraple0.jpg">  |  <img width="200" alt="l2" src="right_oraple2.jpg"> | <img width="200" alt="l4" src="right_oraple4.jpg"> | <img width="200" alt="l6" src="final_orange.jpg"> | 
 
 Combined Contribution to Oraple
-| Level 0 | Level 2 | Level 4 | Level 6 |
+| Level 0 | Level 2 | Level 4 | Final |
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="200" alt="l0" src="blendedoraple0.jpg">  |  <img width="200" alt="l2" src="blendedoraple2.jpg"> | <img width="200" alt="l4" src="blendedoraple4.jpg"> | <img width="200" alt="l6" src="blendedoraple6.jpg"> | 
+|<img width="200" alt="l0" src="blendedoraple0.jpg">  |  <img width="200" alt="l2" src="blendedoraple2.jpg"> | <img width="200" alt="l4" src="blendedoraple4.jpg"> | <img width="200" alt="l6" src="oraple_blend.jpg"> | 
 
 
