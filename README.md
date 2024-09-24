@@ -27,7 +27,7 @@ I then computed the gradient magnitude image by simply computing np.sqrt(xgrad²
 Although convolving with our finite difference operators gets us the correct edge images, it picks up a lot of noise. Using Gaussian filters, we can smooth out these previous results!
 I first created a 2D Gaussian kernel using an outer product of two 1D Gaussian filters, using cv2.getGaussianKernel() with a kernel size of 10 and sigma of 2. Convolving the original image with this 2D Gaussian kernel produces a blurrier image, preserving the general shape and structure of the image, but just making the edges softer.
 
-<img height="300" alt="blurrier" src="blurred.jpg">
+<img height="300" alt="blurrier" src="blur.jpg">
 
 I then repeated similar steps as the previous part with the blurred image, convolving the blurred image with the X and Y finite difference operators.
 
@@ -239,10 +239,6 @@ Right column: Level 0, Level 2, Level 4, Final Level of Combined Contribution to
 Two of my favorite Vietnamese soup dishes are often really hard to choose between; if only I could eat them both at the same time! 
 
 Pho + Bun Bo Hue
-| Pho | Bun Bo Hue | Mask | 
-|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="pho" src="pho.jpg">  |  <img width="300" alt="bun bo hue" src="hue.jpg"> | <img width="300" alt="mask" src="pho_mask.jpg"> | 
-
 | Pho | Bun Bo Hue  | Mask |
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="pho" src="pho.jpg">  |  <img width="300" alt="og nutmeg" src="hue.jpg"> | <img width="300" alt="mask" src="pho_mask.jpg"> |
