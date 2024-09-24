@@ -136,11 +136,11 @@ I tried hybridizing two old selfies of my younger brother, one where his eyes ar
 
 | Squinting Connor | Wide Eyed Connor |
 |:-------------------------:|:-------------------------:|
-|<img width="300" alt="squinting" src="connor1.jpg">  |  <img width="300" alt="wide eyed" src="connor2.jpg"> | 
+|<img width="300" alt="squinting" src="connor1.JPG">  |  <img width="300" alt="wide eyed" src="connor2.JPG"> | 
 
 | Blurred Squinting | Wide Eyed Details | Squinting + Wide Eyed! |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="blurred squinting" src="connor_low.jpg">  | <img width="300" alt="wide eyed details" src="connor_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="connorcomb.jpg"> |
+|<img width="300" alt="blurred squinting" src="connor_low.jpg">  | <img width="300" alt="wide eyed details" src="connor_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="connor_comb.jpg"> |
 
 ### Example: Tim Cruise + Lion
 
