@@ -212,7 +212,7 @@ I used 7 layers of blending and a consistent blurring with kernel size 30 and si
 
 | Original Orange | Original Apple | Mask | 
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="l1" src="laplacian_orange0.jpg">  |  <img width="300" alt="l2" src="laplacian_orange1.jpg"> | <img width="300" alt="wl3" src="laplacian_orange2.jpg"> | 
+|<img width="300" alt="l1" src="orange.jpeg">  |  <img width="300" alt="l2" src="apple.jpeg"> | <img width="300" alt="wl3" src="mask.jpg"> | 
 
 Oraple
 
