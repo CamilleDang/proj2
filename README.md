@@ -258,8 +258,11 @@ Pho + Bun Bo Hue
 You think you just fell out of a coconut tree? 
 
 Kamala Harris in Coconut Tree
-| Mrs. Kamala Harris | Coconut Tree | Mask | Kamala in Tree 😁 | 
-|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="pho" src="kamla.jpg">  |  <img width="300" alt="bun bo hue" src="cocoo.jpg"> | <img width="300" alt="mask" src="kamalaoutline.jpg"> | <img height="300" alt="oraple" src="blendcocos2.jpg"> | 
+| Mrs. Kamala Harris | Coconut Tree | Mask | 
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="300" alt="pho" src="kamla.jpg">  |  <img width="300" alt="bun bo hue" src="cocoo.jpg"> | <img width="300" alt="mask" src="kamalaoutline.jpg"> | 
+
+### Kamala in Tree
+<img height="300" alt="oraple" src="blendcocos2.jpg"> 
 
 
