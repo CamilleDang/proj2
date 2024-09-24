@@ -115,13 +115,21 @@ This image, in celebration of fall, was somewhat not as successful as the other 
 
 # Hybrid Images
 
-We can also use the low-pass Gaussian filter to hybridize two images! Given an image1 and image2, we can first blur image1 by convolving it with a 2D Gaussian filter. I personally split the image channelwise, convolved each channel, and then stacked them on top of each other. We can then extract the high frequency details of image2 by first blurring image2 and then subracting the blurred version by the original version (details = image2 - blur(image2). To combine into one hybridized image, we can simply add our blurred image1 and our details of image2.
+We can also use the low-pass Gaussian filter to hybridize two images! Given an image1 and image2, we first align and resize them. 
+Once the images are aligned, we can first blur image1 by convolving it with a 2D Gaussian filter. I personally split the image channelwise, convolved each channel, and then stacked them on top of each other in a helper function called "blur". We can then extract the high frequency details of image2 by first blurring image2 and then subracting the blurred version by the original version (details = image2 - blur(image2). To combine into one hybridized image, we can simply add our blurred image1 and our details of image2.
 
-As an exmaple, here is the hybridized version of Derek (blurred with kernel size: 22, sigma: 7) & his cat Nutmeg (blurred with kernel size: 49, sigma: 8). 
+### Example: Derek + Nutmeg
 
-| Derek | Nutmeg | Derek + Nutmeg
+As an exmaple, here is the hybridized version of Derek (blurred with kernel size: 22, sigma: 7) & his cat Nutmeg (blurred with kernel size: 49, sigma: 8). I first aligned Nutmeg to Derek using their eyes as the points of alignment. I then followed the steps from above, with Derek as image1 and Nutmeg as image2.
+
+| Original Derek | Original Nutmeg |
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="og derek" src="DerekPicture.jpg">  |  <img width="300" alt="og nutmeg" src="nutmeg.jpg"> |
+
+| Nutmeg Aligned to Derek | Blurred Derek | Nutmeg Details |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="500" alt="blurred trees" src="trees_blurred.jpg">  |  <img width="500" alt="trees details" src="trees_details.jpg"> | <img width="500" alt="trees details" src="trees_details.jpg"> |
+|<img width="300" alt="nutmeg aligned" src="nutmeg_aligned.jpg">  |  <img width="300" alt="blurred derek" src="derek_low.jpg"> | <img width="300" alt="nutmeg details" src="nutmeg_high.jpg"> |
+
 
 
 
