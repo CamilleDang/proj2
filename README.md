@@ -157,7 +157,7 @@ This is famous actor Tim Cruise (low-frequency) hybridized with a lion (high-fre
 
 | Tim Cruise | Lion |
 |:-------------------------:|:-------------------------:|
-|<img width="300" alt="tom" src="croose.jpg">  |  <img width="300" alt="lion" src="lion.jpg"> | 
+|<img width="300" alt="tom" src="cruise.jpg">  |  <img width="300" alt="lion" src="lion.jpg"> | 
 
 | Low Frequency Tim | High Frequency Lion | Lion Cruise |
 |:-------------------------:|:-------------------------:|:-------------------------:|
@@ -191,13 +191,7 @@ We can use a Gaussian stack, in which we repeatedly apply a Gaussian filter to a
 
 
 Gaussian Stack of Apple
-| Level 0 | Level 1 | Level 2 | Level 3 | Level 4 |
-|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="200" alt="l1" src="gauss_apple0.jpg">  |  <img width="200" alt="l2" src="gauss_apple1.jpg"> | <img width="200" alt="l3" src="gauss_apple2.jpg"> | <img width="200" alt="l4" src="gauss_apple3.jpg"> | <img width="200" alt="l5" src="gauss_apple4.jpg"> | 
-
-| Low Frequency Nuggets | High Frequency Eggrolls | Nuggets & Eggrolls! |
-|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="blurred squinting" src="nuggets_low.jpg">  | <img width="300" alt="wide eyed details" src="eggrolls_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="nugs_hybrid.jpg"> |
+|<img width="200" alt="l1" src="gauss_apple0.jpg">   <img width="200" alt="l2" src="gauss_apple1.jpg">  <img width="200" alt="l3" src="gauss_apple2.jpg">  <img width="200" alt="l4" src="gauss_apple3.jpg">  <img width="200" alt="l5" src="gauss_apple4.jpg"> 
 
 Laplacian Stack of Apple
 | Level 0 | Level 1 | Level 2 | Level 3 | Level 4 |
