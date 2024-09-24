@@ -130,8 +130,54 @@ As an exmaple, here is the hybridized version of Derek (blurred with kernel size
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred derek" src="derek_low.jpg">  | <img width="300" alt="nutmeg details" src="nutmeg_high.jpg">  | <img width="300" alt="combined" src="catman.jpg"> |
 
+### Example: Little Brother's Eyes
 
+I tried hybridizing two old selfies of my younger brother, one where his eyes are more squinted, and one where his eyes are wider. He shifted a bit between each selfie, so the alignment isn't perfect, but the squinted eyes are image1 (low-frequency) and the widened eyes are image2 (high-frequency). Up close, his eyes look wide open, but taking a few steps back, you'll see his squinting eyes!
 
+| Squinting Connor | Wide Eyed Connor |
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="squinting" src="DerekPicture.jpg">  |  <img width="300" alt="wide eyed" src="nutmeg.jpg"> | 
 
+| Blurred Squinting | Wide Eyed Details | Squinting + Wide Eyed! |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred squinting" src="connor_low.jpg">  | <img width="300" alt="wide eyed details" src="connor_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="connorcomb.jp[g"> |
+
+### Example: Little Brother's Eyes
+
+I tried hybridizing two old selfies of my younger brother, one where his eyes are more squinted, and one where his eyes are wider. He shifted a bit between each selfie, so the alignment isn't perfect, but the squinted eyes are image1 (low-frequency) and the widened eyes are image2 (high-frequency). Up close, his eyes look wide open, but taking a few steps back, you'll see his squinting eyes!
+
+| Squinting Connor | Wide Eyed Connor |
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="squinting" src="DerekPicture.jpg">  |  <img width="300" alt="wide eyed" src="nutmeg.jpg"> | 
+
+| Blurred Squinting | Wide Eyed Details | Squinting + Wide Eyed! |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred squinting" src="connor_low.jpg">  | <img width="300" alt="wide eyed details" src="connor_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="connorcomb.jp[g"> |
+
+### Example: Tim Cruise + Lion
+
+This is famous actor Tim Cruise (low-frequency) hybridized with a lion (high-frequency details). They make quite a good combination!
+
+| Tim Cruise | Lion |
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="tom" src="croose.jpg">  |  <img width="300" alt="lion" src="lion.jpg"> | 
+
+| Blurred Tim | Lion in Details | Lion Cruise |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred tom" src="croose_low.jpg">  | <img width="300" alt="lion details" src="lion_high.jpg">  | <img width="300" alt="lion cruise" src="croose_hybrid.jpg"> |
+
+### Example: Nuggets vs. Eggrolls
+
+This is a hybrid of a plate of chicken nuggets and Vietnamese eggrolls! Both are good snacks, but there is a clear winner. The low-frequency image1 in this example is the chicken nuggets and high-frequency details is the Vietnamese eggrolls 😍. 
+
+| Chicken Nuggets | Eggrolls 🤩 |
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="nuggets" src="nuggets.jpg">  |  <img width="300" alt="wide eyed" src="eggrolls.jpg"> | 
+
+| Blurred Nuggets | Eggroll Details | Nuggets & Eggrolls! |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred squinting" src="connor_low.jpg">  | <img width="300" alt="wide eyed details" src="connor_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="connorcomb.jpg"> |
+
+This was one of my favorites! We can also look at the frequency analysis of each image. 
 
 
