@@ -126,7 +126,7 @@ As an exmaple, here is the hybridized version of Derek (blurred with kernel size
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="og derek" src="DerekPicture.jpg">  |  <img width="300" alt="og nutmeg" src="nutmeg.jpg"> | <img width="300" alt="nutmeg aligned" src="nutmeg_aligned.jpg"> |
 
-| Blurred Derek | Nutmeg Details | Derek + Nutmeg! |
+| Low Frequency Derek | High Frequency Nutmeg | Derek + Nutmeg! |
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred derek" src="derek_low.jpg">  | <img width="300" alt="nutmeg details" src="nutmeg_high.jpg">  | <img width="300" alt="combined" src="catman.jpg"> |
 
@@ -138,7 +138,7 @@ I tried hybridizing two old selfies of my younger brother, one where his eyes ar
 |:-------------------------:|:-------------------------:|
 |<img width="300" alt="squinting" src="connor1.JPG">  |  <img width="300" alt="wide eyed" src="connor2.JPG"> | 
 
-| Blurred Squinting | Wide Eyed Details | Squinting + Wide Eyed! |
+| Low Frequency Squinting | High Frequency Wide Eyes| Squinting + Wide Eyed! |
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred squinting" src="connor_low.jpg">  | <img width="300" alt="wide eyed details" src="connor_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="connor_comb.jpg"> |
 
@@ -150,7 +150,7 @@ This is famous actor Tim Cruise (low-frequency) hybridized with a lion (high-fre
 |:-------------------------:|:-------------------------:|
 |<img width="300" alt="tom" src="croose.jpg">  |  <img width="300" alt="lion" src="lion.jpg"> | 
 
-| Blurred Tim | Lion in Details | Lion Cruise |
+| Low Frequency Tim | High Frequency Lion | Lion Cruise |
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred tom" src="croose_low.jpg">  | <img width="300" alt="lion details" src="lion_high.jpg">  | <img width="300" alt="lion cruise" src="croose_hybrid.jpg"> |
 
@@ -162,10 +162,18 @@ This is a hybrid of a plate of chicken nuggets and Vietnamese eggrolls! Both are
 |:-------------------------:|:-------------------------:|
 |<img width="300" alt="nuggets" src="nuggets.jpg">  |  <img width="300" alt="wide eyed" src="eggrolls.jpg"> | 
 
-| Blurred Nuggets | Eggroll Details | Nuggets & Eggrolls! |
+| Low Frequency Nuggets | High Frequency Eggrolls | Nuggets & Eggrolls! |
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred squinting" src="nuggets_low.jpg">  | <img width="300" alt="wide eyed details" src="eggrolls_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="nugs_hybrid.jpg"> |
 
-This was one of my favorites! We can also look at the frequency analysis of each image. 
+This was one of my favorites! We can also look at the frequency analysis of each image, represented by the log magnitude of the Fourier transform of all these images (turned into grayscale).
+
+| Fourier of Nuggets | Fourier of Eggrolls |
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="nuggets" src="nuggets_fourier.jpg">  |  <img width="300" alt="wide eyed" src="eggrolls_fourier.jpg"> | 
+
+| Low Frequency Nuggets FFT | High Frequency Eggroll FFT | Nuggets & Eggrolls FFT |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred squinting" src="low_fourier.jpg">  | <img width="300" alt="wide eyed details" src="high_fourier.jpg">  | <img width="300" alt="squinting + wide eyed" src="hybrid_fourier.jpg"> |
 
 
