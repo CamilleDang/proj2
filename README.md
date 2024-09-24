@@ -8,13 +8,13 @@ We begin with this original image of a cameraman.
 
 <img height="300" alt="cameraman og" src="cameraman.png">
 
-I then defined two finite difference operators D_x and D_y, which I simply made with an np.array of [1, -1] respectively reshaped to a 1 x 2 matrix and 2 x 1 matrix, and convolved the original image with each of the operators (using scipy.signal.convolve2d) to get the x and y partial derivatives of the cameraman image. 
+I then defined two finite difference operators D_x and D_y, which I simply made with an np.array of [1, -1] respectively reshaped to a 1 x 2 matrix and 2 x 1 matrix, and convolved the original image with each of the operators (using scipy.signal.convolve2d) to get the x and y partial derivatives of the cameraman image, which I denote as xgrad and ygrad. 
 
 | X Partial Derivative | Y Partial Derivative | 
 |:-------------------------:|:-------------------------:|
 |<img width="300" alt="x gradient" src="xgrad.jpg"> |  <img width="300" alt="y graident" src="ygrad.jpg"> |
 
-I then computed the gradient magnitude image through np.sqrt(xgrad² + ygrad²) and subsequently normalizing it. To compute the edge image, I binarized the gradient magnitude image, using a threshold of 0.25.
+I then computed the gradient magnitude image by simply computing np.sqrt(xgrad² + ygrad²), essentially taking the L2 norm of the x partial derivative and y partial derivative of each pixel, and subsequently normalizing it. To compute the edge image, I binarized the gradient magnitude image, using a threshold of 0.25.
 
 | Combined Gradient Magnitude | Binarized Edge Image | 
 |:-------------------------:|:-------------------------:|
