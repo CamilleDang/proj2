@@ -193,7 +193,7 @@ This was one of my favorites! We can also look at the frequency analysis of each
 We can use a Gaussian stack, in which we repeatedly apply a Gaussian filter to an image and add to the stack, as well as a Laplacian stack, which records the difference between an image in the Gaussian stack and the next (the blurred version). 
 
 Gaussian Stack of Apple
-| | | | |
+| Level 0 | Level 1 | Level 2 | Level 3 | Level 4 |
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="200" alt="l1" src="gauss_apple0.jpg">  |  <img width="200" alt="l2" src="gauss_apple1.jpg"> | <img width="200" alt="l3" src="gauss_apple2.jpg"> | <img width="200" alt="l4" src="gauss_apple3.jpg"> | <img width="200" alt="l5" src="gauss_apple4.jpg"> | 
 
