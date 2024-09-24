@@ -239,6 +239,7 @@ Right column: Level 0, Level 2, Level 4, Final Level of Combined Contribution to
 Two of my favorite Vietnamese soup dishes are often really hard to choose between; if only I could eat them both at the same time! 
 
 Pho + Bun Bo Hue
+
 | Pho | Bun Bo Hue  | Mask |
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="pho" src="pho.jpg">  |  <img width="300" alt="og nutmeg" src="hue.jpg"> | <img width="300" alt="mask" src="pho_mask.jpg"> |
