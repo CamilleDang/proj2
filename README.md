@@ -226,28 +226,13 @@ Left column: Level 0, Level 2, Level 4, Final Contributions of Apple to the Orap
 Middle column: Level 0, Level 2, Level 4, Final Contributions of Orange to the Oraple 
 Right column: Level 0, Level 2, Level 4, Final Level of Combined Contribution to the Oraple 
 
-<img width="300" alt="l0" src="left_oraple0.jpg">  <img width="300" alt="l0" src="right_oraple0.jpg">  <img width="300" alt="l0" src="blendedoraple0.jpg">
+<img width="200" alt="l0" src="left_oraple0.jpg">  <img width="200" alt="l0" src="right_oraple0.jpg">  <img width="200" alt="l0" src="blendedoraple0.jpg">
 
-<img width="300" alt="l2" src="left_oraple2.jpg">  <img width="300" alt="l2" src="right_oraple2.jpg">  <img width="300" alt="l2" src="blendedoraple2.jpg">
+<img width="200" alt="l2" src="left_oraple2.jpg">  <img width="200" alt="l2" src="right_oraple2.jpg">  <img width="200" alt="l2" src="blendedoraple2.jpg">
 
-<img width="300" alt="l4" src="left_oraple4.jpg">  <img width="300" alt="l4" src="right_oraple4.jpg">  <img width="300" alt="l4" src="blendedoraple4.jpg">
+<img width="200" alt="l4" src="left_oraple4.jpg">  <img width="200" alt="l4" src="right_oraple4.jpg">  <img width="200" alt="l4" src="blendedoraple4.jpg">
 
-<img width="300" alt="l6" src="final_apple.jpg">  <img width="300" alt="l6" src="final_orange.jpg">  <img width="300" alt="l6" src="oraple_blend.jpg">
-
-Apple Contribution to Oraple
-| Level 0 | Level 2 | Level 4 | Final |
-|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="200" alt="l0" src="left_oraple0.jpg">  |  <img width="200" alt="l2" src="left_oraple2.jpg"> | <img width="200" alt="l4" src="left_oraple4.jpg"> | <img width="200" alt="l6" src="final_apple.jpg"> | 
-
-Orange Contribution to Oraple 
-| Level 0 | Level 2 | Level 4 | Final |
-|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="200" alt="l0" src="right_oraple0.jpg">  |  <img width="200" alt="l2" src="right_oraple2.jpg"> | <img width="200" alt="l4" src="right_oraple4.jpg"> | <img width="200" alt="l6" src="final_orange.jpg"> | 
-
-Combined Contribution to Oraple
-| Level 0 | Level 2 | Level 4 | Final |
-|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="200" alt="l0" src="blendedoraple0.jpg">  |  <img width="200" alt="l2" src="blendedoraple2.jpg"> | <img width="200" alt="l4" src="blendedoraple4.jpg"> | <img width="200" alt="l6" src="oraple_blend.jpg"> | 
+<img width="200" alt="l6" src="final_apple.jpg">  <img width="200" alt="l6" src="final_orange.jpg">  <img width="200" alt="l6" src="oraple_blend.jpg">
 
 ## More Blending: Pho + Bun Bo Hue
 
