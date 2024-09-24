@@ -191,7 +191,8 @@ We can use a Gaussian stack, in which we repeatedly apply a Gaussian filter to a
 
 
 Gaussian Stack of Apple
-|<img width="200" alt="l1" src="gauss_apple0.jpg">   <img width="200" alt="l2" src="gauss_apple1.jpg">  <img width="200" alt="l3" src="gauss_apple2.jpg">  <img width="200" alt="l4" src="gauss_apple3.jpg">  <img width="200" alt="l5" src="gauss_apple4.jpg"> 
+
+<img width="180" alt="l1" src="gauss_apple0.jpg">   <img width="180" alt="l2" src="gauss_apple1.jpg">  <img width="180" alt="l3" src="gauss_apple2.jpg">  <img width="180" alt="l4" src="gauss_apple3.jpg">  <img width="180" alt="l5" src="gauss_apple4.jpg"> 
 
 Laplacian Stack of Apple
 | Level 0 | Level 1 | Level 2 | Level 3 | Level 4 |
