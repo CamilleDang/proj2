@@ -69,11 +69,11 @@ We can further use the low-pass Gaussian filter to sharpen blurry images! Given 
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="blurred taj mahal" src="blurred_taj.jpg">  |  <img width="500" alt="taj mahal details" src="details.jpg"> |
 
-The sharpened image was thus the original channel + the details * alpha. I used alpha = 1.5 to get this sharpened version of the Taj Mahal image. We can clearly see that in the sharpened version, the lines and etches on the Taj Mahal are a lot more defined and sharper, as well as the outline of the building and of the trees. In the original version, the lines are apparent but not as strong.
-
 | Original Taj Mahal | Sharpened Taj Mahal | 
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="original taj mahal" src="taj.jpg">  |  <img width="500" alt="sharpened taj mahal" src="taj_sharp.jpg"> |
+
+The sharpened image was thus the original channel + the details * alpha. I used alpha = 1.5 to get this sharpened version of the Taj Mahal image. We can clearly see that in the sharpened version, the lines and etches on the Taj Mahal are a lot more defined and sharper, as well as the outline of the building and of the trees. In the original version, the lines are apparent but not as strong.
 
 I tried this sharpening technique on several other images!
 
@@ -83,11 +83,11 @@ I tried this sharpening technique on several other images!
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="blurred sagrada" src="sag_blurred.jpg">  |  <img width="500" alt="sagrada details" src="sag_details.jpg"> |
 
-This was one of the more successful examples I tried. I sharpened an image of La Sagrada Familia, a famous cathedral in Barcelona (that I actually visited before!). Similarly to the Taj Mahal, it had a lot of intricate lines and detailed edges throughout the building structure, which are much more clearly brought out in the sharpened image. We can also see that details such as the construction cranes, leaves, and trees all stand out more because it is more strongly outlined in the sharpened version.
-
 | Original Sagrada Familia | Sharpened Sagrada Familia (Threshold = 0.75) | 
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="original sagrada" src="sag.jpg">  |  <img width="500" alt="sagrada details" src="sag_sharp.jpg">  |
+
+This was one of the more successful examples I tried. I sharpened an image of La Sagrada Familia, a famous cathedral in Barcelona (that I actually visited before!). Similarly to the Taj Mahal, it had a lot of intricate lines and detailed edges throughout the building structure, which are much more clearly brought out in the sharpened image. We can also see that details such as the construction cranes, leaves, and trees all stand out more because it is more strongly outlined in the sharpened version.
 
 ### Scenery
 
@@ -95,11 +95,11 @@ This was one of the more successful examples I tried. I sharpened an image of La
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="blurred scenery" src="scenery_blurred.jpg">  |  <img width="500" alt="scenery details" src="scenery_details.jpg"> |
 
-This scenery also demonstrates a more subtle difference between the sharpened and regular version of this scenery, where the edges of the clouds and mountains are slightly defined. In this example, I think the sharpened image does especially well at outlining the trees at the bottom -- they are much more prominent in the sharpened image as opposed to the original image.
-
 | Original Scenery | Sharpened Scenery (Threshold = 1) | 
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="original scenery" src="scenery.jpg">  |  <img width="500" alt="scenery sharpened" src="scenery_sharp.jpg">  |
+
+This scenery also demonstrates a more subtle difference between the sharpened and regular version of this scenery, where the edges of the clouds and mountains are slightly defined. In this example, I think the sharpened image does especially well at outlining the trees at the bottom -- they are much more prominent in the sharpened image as opposed to the original image.
 
 ### Trees
 
@@ -107,13 +107,21 @@ This scenery also demonstrates a more subtle difference between the sharpened an
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="blurred trees" src="trees_blurred.jpg">  |  <img width="500" alt="trees details" src="trees_details.jpg"> |
 
-This image, in celebration of fall, was somewhat not as successful as the other examples. Because this image contained so many edges due to the whole image being leaves of small detail, the sharpening is not as apparent and can be overbearing, given that it is applying sharper edges to a large portion of the image. 
-
 | Original Trees | Sharpened Trees (Threshold = 1) | 
 |:-------------------------:|:-------------------------:|
 |<img width="500" alt="original trees" src="trees.jpg">  |  <img width="500" alt="trees sharpened" src="trees_sharp.jpg"> |
 
+This image, in celebration of fall, was somewhat not as successful as the other examples. Because this image contained so many edges due to the whole image being leaves of small detail, the sharpening is not as apparent and can be overbearing, given that it is applying sharper edges to a large portion of the image. 
+
 # Hybrid Images
+
+We can also use the low-pass Gaussian filter to hybridize two images! Given an image1 and image2, we can first blur image1 by convolving it with a 2D Gaussian filter. I personally split the image channelwise, convolved each channel, and then stacked them on top of each other. We can then extract the high frequency details of image2 by first blurring image2 and then subracting the blurred version by the original version (details = image2 - blur(image2). To combine into one hybridized image, we can simply add our blurred image1 and our details of image2.
+
+As an exmaple, here is the hybridized version of Derek (blurred with kernel size: 22, sigma: 7) & his cat Nutmeg (blurred with kernel size: 49, sigma: 8). 
+
+| Derek | Nutmeg | Derek + Nutmeg
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="500" alt="blurred trees" src="trees_blurred.jpg">  |  <img width="500" alt="trees details" src="trees_details.jpg"> | <img width="500" alt="trees details" src="trees_details.jpg"> |
 
 
 
