@@ -197,7 +197,7 @@ Laplacian Stack of Apple
 <img width="180" alt="l1" src="laplacian_apple0.jpg">   <img width="180" alt="l2" src="laplacian_apple1.jpg">  <img width="180" alt="l3" src="laplacian_apple2.jpg">  <img width="180" alt="l4" src="laplacian_apple3.jpg">  <img width="180" alt="l5" src="laplacian_apple4.jpg"> 
 
 Gaussian Stack of Orange
-<img width="180" alt="l1" src="gauss_orange0.jpg">    <img width="180" alt="l2" src="gauss_orange1.jpg">  <img width="180" alt="l3" src="gauss_orange2.jpg">  <img width="180" alt="l4" src="gauss_orange3.jpg"> | <img width="180" alt="l5" src="gauss_orange4.jpg">  
+<img width="180" alt="l1" src="gauss_orange0.jpg">    <img width="180" alt="l2" src="gauss_orange1.jpg">  <img width="180" alt="l3" src="gauss_orange2.jpg">  <img width="180" alt="l4" src="gauss_orange3.jpg">  <img width="180" alt="l5" src="gauss_orange4.jpg">  
 
 Laplacian Stack of Orange
 <img width="180" alt="l1" src="laplacian_orange0.jpg">    <img width="180" alt="l2" src="laplacian_orange1.jpg">  <img width="180" alt="wl3" src="laplacian_orange2.jpg">  <img width="180" alt="l4" src="laplacian_orange3.jpg">  <img width="180" alt="l5" src="laplacian_orange4.jpg"> 
@@ -210,10 +210,13 @@ For every additional layer that we blend two images, we follow this logic: blend
 
 I used 7 layers of blending and a consistent blurring with kernel size 30 and sigma 7 for each layer. In order to improve blending, in addition to increasing the kernel size and sigma, I also found it really helpful to add an additional layer to the Gaussian stack of the mask, and using gauss_mask[i + 1] for each blended layer. This enabled me not to use the first unblended mask, which made complete blending a bit difficult. With all these adjustments, I was able to obtain a nicely blended oraple!
 
+| Original Orange | Original Apple | Mask | 
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="300" alt="l1" src="laplacian_orange0.jpg">  |  <img width="300" alt="l2" src="laplacian_orange1.jpg"> | <img width="300" alt="wl3" src="laplacian_orange2.jpg"> | 
+
 Oraple
-| Original Orange | Original Apple | Mask | Oraple! | 
-|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="300" alt="l1" src="laplacian_orange0.jpg">  |  <img width="300" alt="l2" src="laplacian_orange1.jpg"> | <img width="300" alt="wl3" src="laplacian_orange2.jpg"> | <img height="300" alt="oraple" src="oraple_blend.jpg"> | 
+
+<img height="300" alt="oraple" src="oraple_blend.jpg"> 
 
 ### Recreating the Process of Blending the Oraple (Figure 3.42 in Szelski)
 
