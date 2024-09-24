@@ -142,6 +142,18 @@ I tried hybridizing two old selfies of my younger brother, one where his eyes ar
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred squinting" src="connor_low.jpg">  | <img width="300" alt="wide eyed details" src="connor_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="connor_comb.jpg"> |
 
+### Failed Example: Little Brother Selfies pt. 2
+
+My brother took a lot of selfies, so I tried hybridizing the squinting eyes photo from above with another selfie. Unfortunately, even though I was aligning with the eyes, the angle of the second selfie was too skewed, so the images don't hybridize very well. The outline of the face is completely off and a bit confusing. Although I did end up getting a hybridized image, I consider this a failure since the two images have such different placements of the face and image structure -- since the face takes up so much of both the images, it's difficult to align them and create a successful hybridization.
+
+| Squinting Connor | Other Angle Connor |
+|:-------------------------:|:-------------------------:|
+|<img width="300" alt="squinting" src="connor1.JPG">  |  <img width="300" alt="wide eyed" src="connor3.jpg"> | 
+
+| Low Frequency Squinting | High Frequency Other Angle | Combined |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="300" alt="blurred squinting" src="fail_low.jpg">  | <img width="300" alt="wide eyed details" src="fail_high.jpg">  | <img width="300" alt="squinting + wide eyed" src="fail.jpg"> |
+
 ### Example: Tim Cruise + Lion
 
 This is famous actor Tim Cruise (low-frequency) hybridized with a lion (high-frequency details). They make quite a good combination!
@@ -175,5 +187,29 @@ This was one of my favorites! We can also look at the frequency analysis of each
 | Low Frequency Nuggets FFT | High Frequency Eggroll FFT | Nuggets & Eggrolls FFT |
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="300" alt="blurred squinting" src="low_fourier.jpg">  | <img width="300" alt="wide eyed details" src="high_fourier.jpg">  | <img width="300" alt="squinting + wide eyed" src="hybrid_fourier.jpg"> |
+
+# Gaussian and Laplacian Stacks
+
+We can use a Gaussian stack, in which we repeatedly apply a Gaussian filter to an image and add to the stack, as well as a Laplacian stack, which records the difference between an image in the Gaussian stack and the next (the blurred version). 
+
+Gaussian Stack of Apple
+| Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="200" alt="nuggets" src="nuggets_fourier.jpg">  |  <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | 
+
+Laplacian Stack of Apple
+| Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="200" alt="nuggets" src="nuggets_fourier.jpg">  |  <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | 
+
+Gaussian Stack of Apple
+| Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="200" alt="nuggets" src="nuggets_fourier.jpg">  |  <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | 
+
+Laplacian Stack of Orange
+| Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="200" alt="nuggets" src="nuggets_fourier.jpg">  |  <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | <img width="200" alt="wide eyed" src="eggrolls_fourier.jpg"> | 
 
 
